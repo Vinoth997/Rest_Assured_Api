@@ -24,7 +24,7 @@ public class cookiesDemo {
 		.then()
 		.cookie("AEC","ARSKqsJb19iI_2PV_0dIjDG1s-r-5SMvVnLx2eqYe3dFx9ATU6o4WfDAEg")
 		.log().all();
-		
+		// We cannot validate the cookies information is not constant
 	}
 	
 	@Test(priority = 2)
@@ -42,7 +42,12 @@ public class cookiesDemo {
 		//get all cookies information
 		
 		Map<String, String> cookies_values = res.getCookies();
-		System.out.println("Keys info : "+cookies_values.keySet());
+//		System.out.println("Cookies Keys info : "+cookies_values.keySet());
+		
+		for(String k : cookies_values.keySet()) {
+			String cookie_info = res.getCookie(k);
+			System.out.println(k+"   "+cookie_info);
+		}
 		
 	}
 
