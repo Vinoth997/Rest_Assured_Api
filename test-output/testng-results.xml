@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-06T17:53:13 IST" name="Default suite" finished-at="2023-02-06T17:53:14 IST" duration-ms="1268">
+  <suite started-at="2023-02-07T17:53:59 IST" name="Default suite" finished-at="2023-02-07T17:54:00 IST" duration-ms="1322">
     <groups>
     </groups>
-    <test started-at="2023-02-06T17:53:13 IST" name="Default test" finished-at="2023-02-06T17:53:14 IST" duration-ms="1268">
-      <class name="day3.loggingDemo">
-        <test-method signature="testLogs()[pri:0, instance:day3.loggingDemo@39529185]" started-at="2023-02-06T17:53:13 IST" name="testLogs" finished-at="2023-02-06T17:53:14 IST" duration-ms="1238" status="PASS">
+    <test started-at="2023-02-07T17:53:59 IST" name="Default test" finished-at="2023-02-07T17:54:00 IST" duration-ms="1322">
+      <class name="day4.parsingJsonResponseData">
+        <test-method signature="testJsonResponseBody()[pri:0, instance:day4.parsingJsonResponseData@56620197]" started-at="2023-02-07T17:53:59 IST" name="testJsonResponseBody" finished-at="2023-02-07T17:54:00 IST" duration-ms="1287" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogs -->
-      </class> <!-- day3.loggingDemo -->
+        </test-method> <!-- testJsonResponseBody -->
+      </class> <!-- day4.parsingJsonResponseData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

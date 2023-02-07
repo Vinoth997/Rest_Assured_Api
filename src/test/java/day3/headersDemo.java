@@ -42,7 +42,7 @@ public class headersDemo {
 		Headers headers_values = res.getHeaders();
 		
 		for(Header h : headers_values) {
-			System.out.println(h.getName()+"  "+h.getValue());
+			System.out.println(h.getName()+"   "+h.getValue());
 		}
 	}
 	
