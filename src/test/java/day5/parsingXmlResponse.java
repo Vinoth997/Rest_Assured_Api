@@ -38,7 +38,7 @@ public class parsingXmlResponse {
 		String pageNum = res.xmlPath().get("TravelerinformationResponse.page").toString();
 		Assert.assertEquals(pageNum, "1");
 		String travelerName = res.xmlPath().get("TravelerinformationResponse.travelers.Travelerinformation[0].name").toString();
-		Assert.assertEquals(travelerName, "Developer");
+		Assert.assertEquals(travelerName, "Developers");
 	}
 
 }
