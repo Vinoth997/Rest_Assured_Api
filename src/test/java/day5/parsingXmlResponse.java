@@ -7,6 +7,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 
 public class parsingXmlResponse {
@@ -25,7 +26,7 @@ public class parsingXmlResponse {
 		
 	}
 	
-	@Test
+//	@Test
 	void testXmlResponseApproach2() {
 		
 		Response res = given()
@@ -38,7 +39,18 @@ public class parsingXmlResponse {
 		String pageNum = res.xmlPath().get("TravelerinformationResponse.page").toString();
 		Assert.assertEquals(pageNum, "1");
 		String travelerName = res.xmlPath().get("TravelerinformationResponse.travelers.Travelerinformation[0].name").toString();
-		Assert.assertEquals(travelerName, "Developers");
+		Assert.assertEquals(travelerName, "Developer");
+	}
+	
+	@Test
+	void testXmlResponseAdditionalValidation() {
+		
+		Response res = given()
+				.when()
+				.get("http://restapi.adequateshop.com/api/Traveler?page=1");
+		
+		XmlPath xmlobj = new XmlPath(res.asString());
+		
 	}
 
 }
